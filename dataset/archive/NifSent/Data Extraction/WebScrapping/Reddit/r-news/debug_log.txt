@@ -1,0 +1,447 @@
+Processing company: Adani Enterprises Ltd., symbol: ADANIENT
+Processing article: 'Billionaire Gautam Adani charged by the United States in $250m fraud scheme.', published on 2024-11-21
+Processing article: 'Adani Ports to be removed from S&P index due to business links with Myanmar military', published on 2021-04-13
+Processing article: 'Adani scraps $2.5 billion share sale as value of his empire collapses', published on 2023-02-02
+Processing article: 'Himachal Pradesh: Thousands despair as India Adani plants shut down', published on 2023-01-08
+No stock data available for publish date 2023-01-08. Skipping.
+Processing article: 'Private investigator hired by Adani secretly photographed activist's daughter on way to school', published on 2020-10-29
+Processing article: 'World's biggest coal company closes 37 mines as solar power's influence grows', published on 2017-06-23
+Processing article: 'India's Adani Ports, Israel's Gadot win tender to buy Haifa port -Israel's FinMin', published on 2022-07-14
+Processing article: 'Germans Protest Against Siemens' Participation in Australian Adani Mine', published on 2020-01-11
+No stock data available for publish date 2020-01-11. Skipping.
+Processing article: 'Adani denies engaging with Myanmar’s military leaders over port deal but video suggests otherwise', published on 2021-03-30
+Processing article: 'Adani mining giant faces financial fraud claims as it bids for Australian coal loan', published on 2017-08-21
+Processing article: 'Loan to Adani by infrastructure fund could be unlawful, says former clean energy head | Environment', published on 2017-07-07
+Processing article: 'Adani facing growing pressure on fears investors may have been misled', published on 2017-03-22
+Processing article: 'Work halted on Adani's coal mine project in Australia : Guardian', published on 2015-06-24
+Processing company: Adani Ports and Special Economic Zone Ltd., symbol: ADANIPORTS
+Processing article: 'Billionaire Gautam Adani charged by the United States in $250m fraud scheme.', published on 2024-11-21
+Processing article: 'Adani Ports to be removed from S&P index due to business links with Myanmar military', published on 2021-04-13
+Processing article: 'Adani scraps $2.5 billion share sale as value of his empire collapses', published on 2023-02-02
+Processing article: 'Himachal Pradesh: Thousands despair as India Adani plants shut down', published on 2023-01-08
+No stock data available for publish date 2023-01-08. Skipping.
+Processing article: 'Private investigator hired by Adani secretly photographed activist's daughter on way to school', published on 2020-10-29
+Processing article: 'World's biggest coal company closes 37 mines as solar power's influence grows', published on 2017-06-23
+Processing article: 'India's Adani Ports, Israel's Gadot win tender to buy Haifa port -Israel's FinMin', published on 2022-07-14
+Processing article: 'Germans Protest Against Siemens' Participation in Australian Adani Mine', published on 2020-01-11
+No stock data available for publish date 2020-01-11. Skipping.
+Processing article: 'Adani denies engaging with Myanmar’s military leaders over port deal but video suggests otherwise', published on 2021-03-30
+Processing article: 'Adani mining giant faces financial fraud claims as it bids for Australian coal loan', published on 2017-08-21
+Processing article: 'Loan to Adani by infrastructure fund could be unlawful, says former clean energy head | Environment', published on 2017-07-07
+Processing article: 'Adani facing growing pressure on fears investors may have been misled', published on 2017-03-22
+Processing article: 'Work halted on Adani's coal mine project in Australia : Guardian', published on 2015-06-24
+Processing company: Apollo Hospitals Enterprise Ltd., symbol: APOLLOHOSP
+Processing article: 'The Same Pill That Costs $1,000 in America Sells for $4 in India', published on 2016-01-05
+Processing article: 'Eight-year-old pekingese Wild Thang wins World’s Ugliest Dog contest', published on 2024-06-23
+No stock data available for publish date 2024-06-23. Skipping.
+Processing article: 'Barack Obama awards a tearful Joe Biden the Presidential Medal of Freedom, the highest US civilian honour', published on 2017-01-12
+Processing article: 'Cassini to skim Saturn's atmosphere', published on 2017-08-14
+Processing company: Asian Paints Ltd., symbol: ASIANPAINT
+Processing article: 'Asian Paints to go ahead with salary hikes; no lay offs so far', published on 2020-05-15
+Processing company: Axis Bank Ltd., symbol: AXISBANK
+News data file for AXISBANK not found. Skipping.
+Processing company: Bajaj Auto Ltd., symbol: BAJAJ-AUTO
+News data file for BAJAJ-AUTO not found. Skipping.
+Processing company: Bajaj Finance Ltd., symbol: BAJFINANCE
+Processing article: 'BBC News: Thailand hotel fight: Briton Amitpal Singh Bajaj killed', published on 2019-08-23
+Processing article: 'Buy Bajaj Twister Mixer Grinder Online with Best EMI Option', published on 2013-11-06
+Processing article: 'Bajaj Car Cheaper Than Nano | Let's Move On', published on 2011-01-24
+Processing company: Bajaj Finserv Ltd., symbol: BAJAJFINSV
+Processing article: 'BBC News: Thailand hotel fight: Briton Amitpal Singh Bajaj killed', published on 2019-08-23
+Processing article: 'Buy Bajaj Twister Mixer Grinder Online with Best EMI Option', published on 2013-11-06
+Processing article: 'Bajaj Car Cheaper Than Nano | Let's Move On', published on 2011-01-24
+Processing company: Bharat Electronics Ltd., symbol: BEL
+News data file for BEL not found. Skipping.
+Processing company: Bharat Petroleum Corporation Ltd., symbol: BPCL
+News data file for BPCL not found. Skipping.
+Processing company: Bharti Airtel Ltd., symbol: BHARTIARTL
+Processing article: 'Bharti Airtel ties up with Qualcomm for 5G services in India', published on 2021-02-23
+Processing article: 'Airtel considering stake sales, mergers in Africa unit to cut debt: Sunil Mittal', published on 2017-01-21
+No stock data available for publish date 2017-01-21. Skipping.
+Processing article: 'Bharti Airtel Ltd, India's largest telecommunications carrier by subscribers, will soon start charging users extra money for using services such as Skype as Indian operators look to boost their data network and revenues.', published on 2014-12-25
+No stock data available for publish date 2014-12-25. Skipping.
+Processing article: 'airtel rate cutter plans for prepaid mobile recharge available', published on 2015-04-16
+Processing article: 'India’s leading telecom service provider Airtel has been awarded the Best Quality Mobile Network Award at the National Telecom Awards', published on 2012-05-15
+Processing article: 'Watch UEFA Euro 2012 Live on your Airtel Mobile', published on 2012-06-08
+Processing article: 'Airtel techies dare iPhone hackers', published on 2008-08-24
+No stock data available for publish date 2008-08-24. Skipping.
+Processing company: Britannia Industries Ltd., symbol: BRITANNIA
+Processing article: 'Britain has broken its record for the longest continuous period without generating electricity from coal.', published on 2019-04-22
+Processing article: 'Pakistan detains five Chinese trawlers for alleged illegal fishing', published on 2021-07-14
+Processing article: '16-year-old victim of anti-gay Jerusalem Pride attack dies from her injuries', published on 2015-08-02
+No stock data available for publish date 2015-08-02. Skipping.
+Processing article: 'Theresa May would "go to war" to defend sovereignty of Gibraltar', published on 2017-04-02
+No stock data available for publish date 2017-04-02. Skipping.
+Processing article: 'Disappointing end to UK space mission as satellites fail to reach orbit', published on 2023-01-10
+Processing article: 'Cannabis has been upgraded to a "Class B" drug in the UK', published on 2009-01-26
+No stock data available for publish date 2009-01-26. Skipping.
+Processing company: Cipla Ltd., symbol: CIPLA
+News data file for CIPLA not found. Skipping.
+Processing company: Coal India Ltd., symbol: COALINDIA
+Processing article: 'India cancelling 4 gigawatt coal power plant as it moves away from coal', published on 2017-05-16
+Processing article: 'India plans to double imports of Russian coking coal', published on 2022-03-27
+No stock data available for publish date 2022-03-27. Skipping.
+Processing article: 'India Cancels Mega Plans To Build Coal Power Stations Due To Falling Solar Energy Prices', published on 2017-05-27
+No stock data available for publish date 2017-05-27. Skipping.
+Processing article: 'India relaxes environment rules for coal mines, citing heatwave', published on 2022-05-11
+Processing article: 'India nears widespread power crunch on coal shortage', published on 2021-10-05
+Processing article: 'World's biggest coal company closes 37 mines as solar power's influence grows', published on 2017-06-23
+Processing article: 'U.S. and India commit to building six nuclear power plants', published on 2019-03-14
+Processing article: 'New England’s Last Big Coal Plant Shuts Down', published on 2017-06-03
+No stock data available for publish date 2017-06-03. Skipping.
+Processing article: 'India's richest man is pouring more than $80 billion into green energy', published on 2022-01-15
+No stock data available for publish date 2022-01-15. Skipping.
+Processing article: 'Solar is now cheaper than coal, says India energy minister | Climate Home', published on 2016-04-19
+No stock data available for publish date 2016-04-19. Skipping.
+Processing article: 'Dozens trapped under mud after coal mine collapses in India', published on 2016-12-30
+Processing article: 'India's Mumbai hit by massive power failure: A massive powercut has caused disruption in India's western city of Mumbai at a time when the country's energy sector is being reportedly threatened by a lack of coal supplies.', published on 2014-09-02
+Processing article: 'India ex-PM summoned in coal scandal', published on 2015-03-12
+Processing article: 'An Indian industrial plant is capturing the CO2 emissions from a coal boiler and using the CO2 to make valuable chemicals. And just 100km away is the world's biggest solar farm, making power for 150,000 homes on a 10 sq km site.', published on 2017-01-03
+Processing article: 'World's largest single location 1 GW solar park in India to be fully operational by next month', published on 2017-04-28
+Processing article: 'India plans to fell ancient forest to create 40 new coalfields', published on 2020-08-08
+No stock data available for publish date 2020-08-08. Skipping.
+Processing article: 'India, the world's third-biggest emitter of greenhouse gases, rejects net zero emissions target', published on 2021-10-28
+Processing article: 'Australia defies climate warning to back coal', published on 2018-10-09
+Processing article: 'Indian solar power prices hit record low, undercutting fossil fuels | Environment', published on 2017-05-12
+Processing article: 'Nations strike climate deal with coal compromise', published on 2021-11-13
+No stock data available for publish date 2021-11-13. Skipping.
+Processing article: 'India will build 10 new reactors in huge boost to nuclear power', published on 2017-05-18
+Processing article: 'China, India gain on US as world's top economy', published on 2019-01-12
+No stock data available for publish date 2019-01-12. Skipping.
+Processing article: 'Chinese firm helps US coal miners transition to wind energy jobs', published on 2017-07-21
+Processing article: 'U.S. to become top 10 oil exporter by 2020', published on 2017-07-11
+Processing article: 'US freezes new coal mine permits in environmental review', published on 2016-01-15
+Processing company: Dr. Reddy's Laboratories Ltd., symbol: DRREDDY
+Processing article: 'Dr Reddy's recalls over 13,000 bottles of hypertension drug - FDA', published on 2014-06-20
+Processing company: Eicher Motors Ltd., symbol: EICHERMOT
+News data file for EICHERMOT not found. Skipping.
+Processing company: Grasim Industries Ltd., symbol: GRASIM
+News data file for GRASIM not found. Skipping.
+Processing company: HCL Technologies Ltd., symbol: HCLTECH
+Processing article: 'Federal Judge Dismisses Lawsuit Against Disney, HCL over H1-B Visas', published on 2016-10-15
+No stock data available for publish date 2016-10-15. Skipping.
+Processing article: 'Woman loses hair 'in clumps' after Nair was allegedly mixed into conditioner bought at Walmart', published on 2019-08-01
+Processing article: 'Xerox Outsources Management of Data Centers to India's HCL--Boycott the traitors!', published on 2009-04-06
+Processing article: 'IBM CEO Ginni Rometty is stepping down, Arvind Krishna to take over', published on 2020-01-30
+Processing article: 'Reddit discovery on frontpage of CNN!', published on 2010-09-01
+Processing article: 'A Drug Recall That Should Frighten Us All About The FDA - Forbes', published on 2012-12-06
+Processing article: '50-car train derails in Albert Lea; 2 cars leaking hydrochloric acid', published on 2021-05-16
+No stock data available for publish date 2021-05-16. Skipping.
+Processing article: 'Vaping devices test positive for meth at high school', published on 2019-10-15
+Processing article: 'Tech Companies Are Colluding to Cheat H1-B Visa Lottery, U.S. Says', published on 2023-04-28
+Processing article: '16-year-old Castlemont High Oakland student found dead in Sacramento', published on 2022-03-26
+No stock data available for publish date 2022-03-26. Skipping.
+Processing article: 'Common medicines like Benadryl and Paxil found to cause measurable decreases in brain function', published on 2016-04-21
+Processing article: 'Woman Blames Fictional Characters in Arson Case', published on 2017-10-01
+No stock data available for publish date 2017-10-01. Skipping.
+Processing article: 'Weight loss drug Belviq pulled from market over cancer risk', published on 2020-02-14
+Processing company: HDFC Bank Ltd., symbol: HDFCBANK
+News data file for HDFCBANK not found. Skipping.
+Processing company: HDFC Life Insurance Company Ltd., symbol: HDFCLIFE
+News data file for HDFCLIFE not found. Skipping.
+Processing company: Hero MotoCorp Ltd., symbol: HEROMOTOCO
+News data file for HEROMOTOCO not found. Skipping.
+Processing company: Hindalco Industries Ltd., symbol: HINDALCO
+News data file for HINDALCO not found. Skipping.
+Processing company: Hindustan Unilever Ltd., symbol: HINDUNILVR
+Processing article: 'Exclusive: Ben & Jerry's says parent Unilever silenced it over Gaza stance', published on 2024-11-14
+Processing article: 'Unilever to spin off ice cream business, cut 7,500 jobs for cost savings', published on 2024-03-19
+Processing article: 'Unilever has bought US start-up Dollar Shave Club for a reported $1bn .', published on 2016-07-20
+Processing article: 'Consumer goods giant Unilever cutting 1,500 management jobs', published on 2022-01-25
+Processing article: 'Unilever pauses Facebook and Twitter advertising for rest of 2020 due to 'polarized atmosphere' in U.S.', published on 2020-06-26
+Processing article: 'Ben & Jerry's sues parent Unilever to block sale of Israeli business', published on 2022-07-05
+Processing article: 'Facebook and Twitter stocks dive as Unilever halts advertising', published on 2020-06-26
+Processing article: 'Unilever is testing a four-day work week in New Zealand', published on 2020-12-01
+Processing article: 'Unilever recalls dry shampoos due to potentially high levels of benzene', published on 2022-10-24
+Processing article: 'Unilever: Cornetto maker defends decision to stay in Russia', published on 2023-07-06
+Processing article: 'Owner of Ben and Jerry's: We'll ensure every worker in our supply chain gets a living wage', published on 2021-01-21
+Processing article: 'Ben Cohen and Jerry Greenfield (aka Ben & Jerry) arrested in Washington', published on 2016-04-19
+No stock data available for publish date 2016-04-19. Skipping.
+Processing article: 'Ben & Jerry’s Is Going Non-GMO', published on 2013-06-01
+No stock data available for publish date 2013-06-01. Skipping.
+Processing article: 'Unilever to Facebook and Google: Clean up digital 'swamp' or we'll pull ads', published on 2018-02-12
+Processing article: 'Children of jailed Iranian activist Narges Mohammadi accept her Nobel Peace Prize', published on 2023-12-12
+Processing article: 'Firms such as Kellogg's, Unilever and Nestlé 'use child-labour palm oil'', published on 2016-12-01
+Processing article: 'Spain's Malaga to ban new holiday flat permits in 43 neighbourhoods', published on 2024-10-24
+Processing article: 'Kraft backs out of Unilever bid after hostile reception', published on 2017-02-20
+Processing article: 'Bacteria and mold found during inspection of Tom’s of Maine facility, FDA says', published on 2024-11-20
+No stock data available for publish date 2024-11-20. Skipping.
+Processing article: 'Unilever to slash new plastic use by nearly 400,000 tons per year', published on 2019-10-08
+No stock data available for publish date 2019-10-08. Skipping.
+Processing article: 'Lowcountry WWII veteran celebrates 101st birthday on Veterans Day', published on 2024-11-12
+Processing article: 'Unilever to Buy Cleaning-Products Company Seventh Generation', published on 2016-09-19
+Processing article: 'Trader Joe's recalls two types of cookies because they may contain rocks', published on 2023-07-24
+Processing article: 'Unilever recalls Wall’s Mini Calippo multi-packs because they may contain small pieces of metal', published on 2020-05-08
+Processing company: ICICI Bank Ltd., symbol: ICICIBANK
+Processing article: 'ICICI Bank suspends 18 in money-laundering probe', published on 2013-03-16
+No stock data available for publish date 2013-03-16. Skipping.
+Processing company: ITC Ltd., symbol: ITC
+Processing article: 'Houston petrochemical disaster stretches to sixth day, impacting key port', published on 2019-03-24
+No stock data available for publish date 2019-03-24. Skipping.
+Processing article: 'FDA approves self-collection HPV tests as an alternative to Pap smears', published on 2024-11-14
+Processing article: 'ITC Deer Park plant fire spreads to 5 more tanks, shelter-in-place lifted', published on 2019-03-18
+Processing article: 'Guy poops in the floor of a house he robbed and DNA leads to his arrest.', published on 2016-03-05
+No stock data available for publish date 2016-03-05. Skipping.
+Processing article: 'ITC Votes in Favor of Imposing Tariffs on U.S. Solar Imports', published on 2017-09-22
+Processing article: 'ITC Deer Park plant fire could take 2 days to burn out, officials say', published on 2019-03-18
+Processing article: 'Motorola asks ITC to ban every Mac, iPad, and most iPhones', published on 2012-09-19
+No stock data available for publish date 2012-09-19. Skipping.
+Processing article: 'Nvidia asks Washington to sledgehammer smartphones: The case before the ITC shows why we shouldn’t have to adjudicate 21st-century smartphone disputes with 1930s legislation.', published on 2015-07-02
+Processing article: 'Plane crashes into flight safety building at ITC (Wichita Mid-continent airport)', published on 2014-10-30
+Processing article: 'White House overrules ITC trade ban on Apple iPhones, iPads', published on 2013-08-03
+No stock data available for publish date 2013-08-03. Skipping.
+Processing article: ''Older iPhones won’t be banned as Obama Administration vetoes ITC decision'', published on 2013-08-04
+No stock data available for publish date 2013-08-04. Skipping.
+Processing article: 'U.S. ITC says Apple infringes Samsung patent, bans some products', published on 2013-06-04
+Processing article: 'ITC ruling opens door to U.S. collecting duties on Chinese steel imports', published on 2009-12-30
+Processing article: 'Health worries smolder for residents after the massive fire at a Texas petrochemical facility', published on 2019-03-25
+Processing article: 'A Tale of Tennessee WTF', published on 2011-03-27
+No stock data available for publish date 2011-03-27. Skipping.
+Processing company: IndusInd Bank Ltd., symbol: INDUSINDBK
+News data file for INDUSINDBK not found. Skipping.
+Processing company: Infosys Ltd., symbol: INFY
+Processing article: 'Infosys still operating from Russia eight months after saying it was pulling out', published on 2022-11-06
+No stock data available for publish date 2022-11-06. Skipping.
+Processing article: 'Verizon to Outsource 2,500 IT Jobs to Indian Software Giant Infosys', published on 2018-11-23
+No stock data available for publish date 2018-11-23. Skipping.
+Processing article: 'IT job market crashes in India: Nearly 200,000 jobs at stake at Infosys, Cognizant and others', published on 2017-05-13
+No stock data available for publish date 2017-05-13. Skipping.
+Processing article: 'Verizon signs $700M outsourcing deal with Infosys', published on 2018-10-06
+No stock data available for publish date 2018-10-06. Skipping.
+Processing article: 'H-1B visa ​fracas flares up again as US probes Infosys, TCS', published on 2015-06-19
+Processing article: 'H-1B visa ban: Infosys hiring Americans to negate work visa freeze, says CEO Salil Parekh', published on 2020-06-29
+Processing article: 'Former Infosys recruiter says he was told not to hire U.S. workers', published on 2014-10-08
+Processing article: 'H-1B visa: Infosys, TCS are not stealing jobs but meeting talent shortage, says former Infy Mohandas Pai', published on 2017-04-29
+No stock data available for publish date 2017-04-29. Skipping.
+Processing article: 'Infosys signs multi-year agreement with Deutsche Bank', published on 2015-07-08
+Processing article: 'A Wisconsin IT professional has filed a lawsuit against Indian outsourcing firm Infosys alleging that the company discriminates against U.S. job applicants in favor of South Asians for jobs in the U.S.', published on 2013-08-07
+Processing article: 'Infosys beats estimates again, profits rise to Rs. 2,886 Crore in Q1', published on 2014-07-11
+Processing article: 'Silicon Valley lawmaker introduces H-1B reform bill', published on 2017-01-25
+Processing article: 'Whistle-Blower Claiming Visa Fraud Keeps His Job, but Not His Work - NYTimes.com', published on 2012-04-13
+Processing article: 'The NSA has its own team of elite hackers', published on 2013-08-29
+Processing company: JSW Steel Ltd., symbol: JSWSTEEL
+Processing article: 'JSW Steel to invest up to $500 mn in US-based steel manufacturing unit', published on 2018-06-23
+No stock data available for publish date 2018-06-23. Skipping.
+Processing article: 'Jehovah’s Witnesses Organization has to pay $4000/day for protecting child abusers.', published on 2017-11-12
+No stock data available for publish date 2017-11-12. Skipping.
+Processing company: Kotak Mahindra Bank Ltd., symbol: KOTAKBANK
+News data file for KOTAKBANK not found. Skipping.
+Processing company: Larsen & Toubro Ltd., symbol: LT
+Processing article: 'Disney told L.A. residents to move to Florida for a planned campus. They did, it was canceled and now they’re suing', published on 2024-06-20
+Processing article: 'Russel L. Honoré, who led Katrina response, will now head review of U.S. Capitol security', published on 2021-01-15
+Processing article: 'In one of L.A.'s largest cash heists, burglars steal as much as $30 million. Mystery surrounds case', published on 2024-04-04
+Processing article: 'L'Oreal requiring doctor's note for U.S. employees to work from home', published on 2020-08-07
+Processing article: 'Four current and former L.A. Sheriff's Department employees died of suicide in a 24-hour span', published on 2023-11-08
+Processing article: 'U.S. truckers planning protest convoy, perhaps starting in L.A. for Super Bowl, DHS warns', published on 2022-02-10
+Processing article: 'Instagram-famous squirrel Peanut euthanized after it was taken from owner's New York state home', published on 2024-11-02
+No stock data available for publish date 2024-11-02. Skipping.
+Processing article: 'Video shows L.A. deputy punching mother holding baby; sheriff calls it 'unacceptable'', published on 2023-07-13
+Processing article: 'New York state education officials vote to prohibit public schools from using Indigenous team names, logos or mascots', published on 2023-04-20
+Processing article: 'L.A. woman, 88, had private security for protection. A guard shot her on New Year's Eve', published on 2024-01-03
+Processing article: 'Oregon Man Sentenced to 30 Days in Jail -- for Collecting Rainwater on His Property', published on 2012-07-27
+Processing article: 'Possible suspect in L.A. mass shooting found dead in van, sources say', published on 2023-01-22
+No stock data available for publish date 2023-01-22. Skipping.
+Processing article: 'Former Alabama police officer charged with murder in fatal shooting of a Black man outside his home | CNN', published on 2024-01-06
+No stock data available for publish date 2024-01-06. Skipping.
+Processing article: 'L.A. area cop seen on video punching handcuffed woman twice in face', published on 2021-04-23
+Processing article: 'Judge in Trump 2020 election case agrees to cancel court deadlines after his presidential win', published on 2024-11-08
+Processing article: 'Los Angeles Covid-19 Update: Ambulances Waiting 4 Hours To Offload Patients As L.A. Has Just 56 Adult ICU Beds Left, Orange County Has None', published on 2020-12-15
+Processing article: 'Indiana ban on gender transition treatment for minors upheld by U.S. appeals court', published on 2024-11-14
+Processing article: 'Pope Francis to parents of L.G.B.T. children: ‘God loves your children as they are.’', published on 2020-09-18
+Processing article: 'EPA Corrects the Record after Reckless Reporting on Temporary Compliance Guidance', published on 2020-03-30
+Processing article: 'Thousands rally in downtown L.A. against Israel's air and ground war in Gaza', published on 2023-10-29
+No stock data available for publish date 2023-10-29. Skipping.
+Processing article: 'Judge strikes down Wyoming abortion laws, including an explicit ban on pills to end pregnancy', published on 2024-11-19
+Processing article: 'Sean Combs Won’t Face Charges For 2016 L.A. Beating Of Cassie, DA Says, Despite Video Evidence; “Cover-Up” Could Warrant Possible Probe', published on 2024-05-18
+No stock data available for publish date 2024-05-18. Skipping.
+Processing article: 'Movies Tony Todd, star of Candyman, dies aged 69', published on 2024-11-09
+No stock data available for publish date 2024-11-09. Skipping.
+Processing article: 'Rapper Nipsey Hussle killed in shooting outside his L.A. store: Two other men were in serious condition in the incident at Marathon Clothing in south Los Angeles. A suspect remained at large.', published on 2019-04-01
+Processing company: Mahindra & Mahindra Ltd., symbol: M&M
+Processing article: 'Indian automaker Mahindra opens US plant', published on 2017-11-20
+Processing article: 'Renault, Maruti, Mahindra, Hyundai cars get zero rating in crash tests', published on 2016-05-18
+Processing company: Maruti Suzuki India Ltd., symbol: MARUTI
+News data file for MARUTI not found. Skipping.
+Processing company: NTPC Ltd., symbol: NTPC
+News data file for NTPC not found. Skipping.
+Processing company: Nestle India Ltd., symbol: NESTLEIND
+Processing article: 'Nestle illegally fires worker for reporting racist comment', published on 2020-12-15
+Processing article: 'Nestlé adds sugar to infant milk sold in poorer countries, report finds | Global development', published on 2024-04-17
+No stock data available for publish date 2024-04-17. Skipping.
+Processing article: 'Nestle has been bottling and selling water it has no right to in drought-stricken California, state says', published on 2017-12-28
+Processing article: 'Nestlé raises food prices again despite NGO protests', published on 2023-04-25
+Processing article: 'The U.S. Supreme Court rejects a bid by Nestle to throw out a lawsuit seeking to hold them liable for the use of child slaves to harvest cocoa.', published on 2016-01-11
+Processing article: 'Drought-hit California orders Nestlé to stop pumping millions of gallons of water', published on 2021-04-27
+Processing article: 'Nestle CEO Tim Brown on whether he'd consider stopping bottling water in California: "Absolutely not. In fact, I'd increase it if I could."', published on 2015-05-14
+Processing article: 'Nestlé has failed to remove vanillan from baby formula as it promised', published on 2019-04-10
+Processing article: 'Nestle continues to extract water from town despite severe drought: activists', published on 2016-08-21
+No stock data available for publish date 2016-08-21. Skipping.
+Processing article: 'Nestle uses insect protein in Purina pet food', published on 2020-11-06
+Processing article: 'Nestle sells water taken from drought stricken area', published on 2014-07-14
+Processing article: 'PepsiCo, Coca-Cola, and Nestlé are among food companies spending heavily in Washington state to block new requirements for labeling foods made with genetically modified organisms.', published on 2013-10-30
+Processing article: 'Investigation reveals Nestle extracts water from National Forest using expired permit, while cabin owners required to stop drawing water from a creek', published on 2015-03-20
+Processing article: 'Nestlé admits slavery in Thailand while fighting child labour lawsuit in Ivory Coast', published on 2016-02-01
+Processing article: 'Nestle and Mars ‘used child labour to get cheap cocoa’ court papers allege', published on 2021-11-01
+Processing article: 'Nestle flies baby formula supplies to U.S. from Europe to alleviate shortage', published on 2022-05-17
+Processing article: 'Mars, Nestlé and Hershey to face landmark child slavery lawsuit in US', published on 2021-02-12
+Processing article: 'Nestle Continues Stealing World's Water During Drought : Indybay', published on 2015-03-19
+Processing article: 'Coca-Cola, Pepsi and Nestlé named top plastic polluters for third year in a row', published on 2020-12-07
+Processing article: 'Nestle to launch new Ukraine facility in rare war-time investment', published on 2022-12-13
+Processing article: 'Hershey, Nestle, Cargill win dismissal in U.S. of child slavery lawsuit', published on 2022-06-29
+Processing article: 'Group challenges Nestle's water permit from Michigan', published on 2018-06-02
+No stock data available for publish date 2018-06-02. Skipping.
+Processing article: 'Fresh trouble for Nestle, fungus found in baby food Cerelac', published on 2015-06-16
+Processing article: 'Michigan approves Nestle's water withdrawal permit', published on 2018-04-02
+Processing company: Oil & Natural Gas Corporation Ltd., symbol: ONGC
+Processing article: 'ONGC Gets Green Clearance for Krishna-Godavari Kasin Project', published on 2016-01-27
+Processing article: 'Sudan conflict: Landmark skyscraper in Khartoum engulfed in flames', published on 2023-09-18
+Processing article: 'PM Narendra Modi steps up economic reforms, eyes selling ONGC stake', published on 2014-10-20
+Processing company: Power Grid Corporation of India Ltd., symbol: POWERGRID
+News data file for POWERGRID not found. Skipping.
+Processing company: Reliance Industries Ltd., symbol: RELIANCE
+Processing article: 'Disney told L.A. residents to move to Florida for a planned campus. They did, it was canceled and now they’re suing', published on 2024-06-20
+Processing article: 'The Supreme Court won’t let a North Carolina charter school force girls to wear skirts to school', published on 2023-06-26
+Processing article: 'EU signs US gas deal to curb reliance on Russia', published on 2022-03-25
+Processing article: 'Montana Ag Network: low-emission cattle program introduced to Montana ranchers', published on 2023-04-03
+Processing article: 'How School Funding's Reliance On Property Taxes Fails Children : NPR', published on 2016-04-21
+Processing article: 'Reliable Robotics Flies Large Cargo Aircraft with No One On Board', published on 2023-12-06
+Processing article: 'Documents reveal EPA's fracking study compromised by reliance on industry', published on 2015-03-02
+Processing article: 'Bernard Marcus, cofounder of The Home Depot and billionaire Republican megadonor, has died', published on 2024-11-05
+Processing article: 'Pope in Japan says world must rethink reliance on nuclear power', published on 2019-11-25
+Processing article: 'Hewlett Packard Enterprise is the latest tech company to leave Silicon Valley, and is moving to Houston', published on 2020-12-02
+Processing article: '15 law school students told they passed bar exam, then told they didn't', published on 2020-12-06
+No stock data available for publish date 2020-12-06. Skipping.
+Processing article: 'Sriracha hot sauce factory no longer considered a public nuisance in Irwindale', published on 2014-05-29
+Processing article: 'The 8 biggest U.S. banks must boost capital levels by a total of about $68 billion under new rules. The rules limit banks' reliance on debt, part of efforts to prevent another financial crisis. By 2018, banks must rely more on funding sources such as shareholder equity, rather than borrowing money.', published on 2014-04-09
+Processing article: 'Meet the Army’s first female active duty sniper', published on 2023-12-15
+Processing article: 'China Close To Creating ‘Artificial Sun’ That Could End Reliance On Fossil Fuels', published on 2016-02-11
+Processing article: 'Burning Man attendees advised to 'shelter in place,' conserve food and water due to heavy rain', published on 2023-09-02
+No stock data available for publish date 2023-09-02. Skipping.
+Processing article: 'Saudi Post-Oil Plan Weighs Income Tax on Expat Workers - Saudi Arabia is considering taxing millions of foreign residents as the kingdom seeks to reduce its reliance on oil revenue after the plunge in crude prices', published on 2016-06-08
+Processing article: 'American kids are getting too fat to fight, retired military leaders worry', published on 2014-05-17
+No stock data available for publish date 2014-05-17. Skipping.
+Processing article: 'Lithium, a key ingredient in lightweight batteries, is already powering the modern world, and could be key to getting the world to reduce its reliance on fossil fuels.', published on 2014-04-14
+No stock data available for publish date 2014-04-14. Skipping.
+Processing article: 'Gone in seconds: rising text message scams are draining US bank accounts | Scams | The Guardian', published on 2023-04-26
+Processing article: 'Chart: How Booz Allen Hamilton Swallowed Washington "From its origins as a management consulting firm, Booz Allen has quietly grown into a governmentwide contracting behemoth, fed by ballooning post-Sept. 11 intelligence budgets and Washington’s increasing reliance on outsourcing."', published on 2013-06-14
+Processing article: 'BLM demands Burning Man provide 24-hour access to ice cream', published on 2015-06-27
+No stock data available for publish date 2015-06-27. Skipping.
+Processing article: 'Standard & Poor's downgraded the ratings of government-sponsored enterprises Fannie Mae and Freddie Mac Monday, citing their reliance on the U.S. government.', published on 2011-08-08
+Processing article: 'Chris Evans sending 'Captain America' shield to little boy who saved sister from dog attack', published on 2020-07-16
+Processing article: 'CNN is temporarily breaking ties with the Associated Press for a week in an experiment to guage their reliance on the wire service', published on 2010-04-10
+No stock data available for publish date 2010-04-10. Skipping.
+Processing company: SBI Life Insurance Company Ltd., symbol: SBILIFE
+News data file for SBILIFE not found. Skipping.
+Processing company: Shriram Finance Ltd., symbol: SHRIRAMFIN
+News data file for SHRIRAMFIN not found. Skipping.
+Processing company: State Bank of India, symbol: SBIN
+Processing article: 'SBI agent shoots, kills man after suspected shoplifting in Apex, police say', published on 2023-04-11
+Processing article: 'Detective Bryon Vassey indicted for killing Keith Vidal, mentally ill North Carolina teenager', published on 2014-02-09
+No stock data available for publish date 2014-02-09. Skipping.
+Processing article: 'Lincoln Co. DA requests SBI investigation after WBTV exposes excessive force allegations', published on 2022-08-11
+Processing article: 'Student present at The Big Red Rape Crew party jokes that "They raped her more than the Duke lacrosse team". Rape Party Host's mother is the prosecuting attorney for the town', published on 2013-01-03
+Processing article: 'Federal Judge Blocks Sweeping New Immigration Law in Texas (Gift Article)', published on 2024-02-29
+Processing article: 'SBI investigation leads to charges against former Wrightsville Beach police officer', published on 2020-09-03
+Processing article: '5-year-old girl finds SBI agent’s gun in NC restaurant bathroom.', published on 2015-10-20
+Processing article: 'Bharti, SBI in talks over Zain deal funding', published on 2010-02-24
+Processing article: 'Shooting suspect in Galleria Mall shooting in Hoover, Alabama yesterday likely did not fire shots according to Police. Shooter remains at large.', published on 2018-11-24
+No stock data available for publish date 2018-11-24. Skipping.
+Processing article: 'Havelock City Commissioner on probation, convicted of multiple child sex crimes involving 2 to 12 year old kids', published on 2020-08-28
+Processing article: 'S P E A R : http://bit.ly/1ptY0NW Software for Sinusoidal Partial Editing Analysis and Resynthesis http://bit.ly/1mYsRxu', published on 2014-08-17
+No stock data available for publish date 2014-08-17. Skipping.
+Processing company: Sun Pharmaceutical Industries Ltd., symbol: SUNPHARMA
+News data file for SUNPHARMA not found. Skipping.
+Processing company: Tata Consultancy Services Ltd., symbol: TCS
+Processing article: 'H-1B visa ​fracas flares up again as US probes Infosys, TCS', published on 2015-06-19
+Processing article: 'Police chief: Kneeling on Floyd's neck violated policy', published on 2021-04-05
+Processing article: 'H-1B visa: Infosys, TCS are not stealing jobs but meeting talent shortage, says former Infy Mohandas Pai', published on 2017-04-29
+No stock data available for publish date 2017-04-29. Skipping.
+Processing article: 'After ‘whites only’ job posting, Va. tech company hit with fine from the Justice Department', published on 2024-05-26
+No stock data available for publish date 2024-05-26. Skipping.
+Processing article: 'US court fines TCS $940m for info theft', published on 2016-04-17
+No stock data available for publish date 2016-04-17. Skipping.
+Processing article: 'Turkmenistan celebrates new holiday to honour native dog breed - The Alabay, a native variety of shepherd dog was honoured on Sunday with an awards ceremony.', published on 2021-04-26
+Processing article: 'TCS staff churn: B’lore IT crowd rally in protest, unions offer support', published on 2015-01-05
+Processing article: ''Restructuring' TCS lops off thousands of jobs, say staff', published on 2015-01-05
+Processing article: 'Supertyphoon Yutu eye wall with a direct hit on a U.S. territory, the Northern Marianas Islands, with winds up to 180mph.', published on 2018-10-24
+Processing article: 'India’s Tata Consultancy Services faces US jury over why it fires so many Americans', published on 2018-11-06
+Processing article: 'Silicon Valley lawmaker introduces H-1B reform bill', published on 2017-01-25
+Processing company: Tata Consumer Products Ltd., symbol: TATACONSUM
+News data file for TATACONSUM not found. Skipping.
+Processing company: Tata Motors Ltd., symbol: TATAMOTORS
+News data file for TATAMOTORS not found. Skipping.
+Processing company: Tata Steel Ltd., symbol: TATASTEEL
+Processing article: 'Tata Steel job cuts to top 1,000', published on 2016-01-18
+Processing article: 'Tata Steel: Union workers back new pension plan', published on 2017-02-15
+Processing company: Tech Mahindra Ltd., symbol: TECHM
+News data file for TECHM not found. Skipping.
+Processing company: Titan Company Ltd., symbol: TITAN
+Processing article: 'Quincy Jones, music titan who worked with everyone from Frank Sinatra to Michael Jackson, dies at 91', published on 2024-11-04
+Processing article: 'Family of explorer who died in the Titan sub implosion seeks $50M-plus in wrongful death lawsuit', published on 2024-08-07
+Processing article: ''Debris field' discovered within search area near Titanic, US Coast Guard says | World News', published on 2023-06-22
+Processing article: 'A former engineering director for the Titan says he felt pressured to get the submersible ready', published on 2024-09-16
+Processing article: '‘Banging’ sounds heard in search for missing Titan submersible', published on 2023-06-21
+Processing article: 'More presumed human remains recovered from imploded Titan submersible', published on 2023-10-11
+Processing article: 'Titanic tourist sub goes missing sparking search', published on 2023-06-19
+Processing article: 'Titan submersible's scientific director says the sub malfunctioned just prior to the Titanic dive', published on 2024-09-20
+Processing article: 'Crews detect underwater noises again in search for missing Titanic-bound submarine', published on 2023-06-21
+Processing article: 'K-9 Titan killed in the line of duty during shootout', published on 2024-11-15
+No stock data available for publish date 2024-11-15. Skipping.
+Processing article: 'OceanGate CEO said he would 'buy a congressman' for any Titan problems: Former employee', published on 2024-09-27
+Processing article: 'Attack On Titan Editor Arrested For Allegedly Murdering His Wife', published on 2017-01-11
+Processing article: 'A key employee who called the Titan unsafe testifies the company only wanted to make money', published on 2024-09-17
+Processing article: 'OceanGate suspends all exploration and commercial operations following Titan submersible implosion', published on 2023-07-06
+Processing article: '1 dead and 6 missing after luxury superyacht sinks in storm off Sicily', published on 2024-08-19
+Processing article: 'Loyal dog helped solve owner's grisly murder as cousin is jailed for life', published on 2024-11-13
+Processing article: 'A gold pocket watch given to the captain who rescued Titanic survivors sells for record price', published on 2024-11-17
+No stock data available for publish date 2024-11-17. Skipping.
+Processing article: 'Italian authorities open manslaughter investigation into superyacht sinking', published on 2024-08-24
+No stock data available for publish date 2024-08-24. Skipping.
+Processing article: 'Titan Debris brought ashore', published on 2023-06-28
+Processing article: 'Boeing workers overwhelmingly reject contract, prepare to strike', published on 2024-09-13
+Processing article: 'Lee Kun-hee of Samsung Dies at 78; Built an Electronics Titan', published on 2020-10-25
+No stock data available for publish date 2020-10-25. Skipping.
+Processing article: 'Pixar’s ‘Lightyear’ Banned in Saudi Arabia and U.A.E. Over Same-Sex Kiss', published on 2022-06-13
+Processing article: 'Titanic: First ever full-sized scans reveal wreck as never seen before', published on 2023-05-17
+Processing article: 'Suspended Twitter account tracking Elon Musk’s jet moves to Threads', published on 2023-07-09
+No stock data available for publish date 2023-07-09. Skipping.
+Processing article: 'Titans facing $300K fine for violating COVID-19 protocol, NFL says', published on 2020-10-25
+No stock data available for publish date 2020-10-25. Skipping.
+Processing company: Trent Ltd., symbol: TRENT
+Processing article: 'The Virgin Father --- 
+
+Trent Arsenault has never had sex, but he's the father of 15 children – and counting. He's a well-paid tech worker, uses diet and exercise to maximise his sperm count, and he gives away his semen for free. The FDA don't like it', published on 2012-02-06
+Processing article: 'Local doctor and two children are among 5 killed in South Carolina mass shooting, authorities say', published on 2021-04-08
+Processing article: 'Evictions to resume in Philadelphia after multiple tenants shot', published on 2023-08-19
+No stock data available for publish date 2023-08-19. Skipping.
+Processing article: 'Erika Sandoval, accused of murdering officer ex-husband, testifies in her own murder trial', published on 2019-10-31
+Processing article: 'Third cat test positive for Bubonic Plague in Wyoming', published on 2019-01-17
+Processing article: 'Antisemitic Kanye 'Ye' West remarks found written around University of Florida campus', published on 2023-02-03
+Processing article: 'Fed-Up Father Of Bullied Son Files Restraining Order Against Fairfield 9-Year-Old', published on 2014-03-23
+No stock data available for publish date 2014-03-23. Skipping.
+Processing article: '"I Can See Clearly Now" singer-songwriter Johnny Nash dies at 80', published on 2020-10-07
+Processing article: 'Subway must pay CBC $500K for failed defamation lawsuit over chicken', published on 2020-02-29
+No stock data available for publish date 2020-02-29. Skipping.
+Processing article: 'Debutante ball in Knoxville, Tennessee, facing accusations of racism after newspaper mentions the women "must be white".', published on 2015-04-21
+Processing article: 'Stoke-on-Trent house '30in too tall' risks demolition', published on 2018-05-10
+Processing article: 'Man arrested after allegedly spanking stranger’s child in Kroger checkout line', published on 2018-02-09
+Processing article: 'Republicans Call For Senator Reid To Resign Citting "Double Standard" In Trent Lott Case', published on 2010-01-11
+Processing article: 'Marilyn Manson fined for blowing nose on concert camerawoman', published on 2023-09-19
+No stock data available for publish date 2023-09-19. Skipping.
+Processing article: 'Singapore Airlines grounds 2, Boeing 787 due to "Trent 1000 TEN" engine defects.', published on 2019-04-02
+Processing article: 'Dave Grohl breaks his leg during gig. 15 minutes with paramedic he returns with a cast and continues the show sitting on a chair', published on 2015-06-12
+Processing article: 'Team India took the first win by 203 runs in the Trent Bridge Test against England', published on 2018-08-24
+Processing article: 'Anti-Asian hate crimes bill becomes law in US', published on 2021-05-20
+Processing article: 'Rep. Trent Franks (R-Ariz.), whose measure banning abortions after 20 weeks was being considered in the House Judiciary Committee, argued against a Democratic amendment to make exceptions for rape and incest by suggesting that pregnancy from rape is rare.', published on 2013-06-12
+Processing article: 'Mylan isn't alone: 11 drugmakers with off-the-charts pricing power', published on 2016-08-26
+Processing article: 'Lesbians sue N.C. after being turned away from fertility clinic', published on 2016-04-22
+Processing article: 'The FAA flags more potential safety issues on Boeing’s 737 Max and 787 Dreamliner | CNN Business', published on 2024-03-04
+Processing article: 'Steubenville Rape Case Update: Trent Mays, convicted of raping teen, ordered to register as sex offender', published on 2013-06-14
+Processing article: 'Shark attacks boy swimming in Lake Pontchartrain, Louisiana', published on 2014-08-10
+No stock data available for publish date 2014-08-10. Skipping.
+Processing article: 'Hawkins County Sheriff’s Office: Carlie Trent found, suspect in custody', published on 2016-05-12
+Processing company: UltraTech Cement Ltd., symbol: ULTRACEMCO
+News data file for ULTRACEMCO not found. Skipping.
+Processing company: Wipro Ltd., symbol: WIPRO
+News data file for WIPRO not found. Skipping.
+Processing complete.

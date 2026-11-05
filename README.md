@@ -99,6 +99,49 @@ for step in forecast["trajectory"]:
     print(f"Step t+{step['step']}: ${step['predicted_price']} ({step['delta']:+} | {step['pct_change']:+.2f}%) -> {step['signal']}")
 ```
 
+### 5. Universal Multi-Company Training (Train ONE Model on Entire Folder)
+
+Train **ONE unified, generalized LSTM** across all company CSV files in a folder (e.g. 55 NIFTY 50 companies) with independent per-company scaling and an interactive company explorer:
+
+```bash
+# Train one model on all company CSVs in the folder
+python multi_company_unified_lstm.py \
+    --data_dir "dataset/archive/NifSent/NIFTY 50" \
+    --epochs 20 \
+    --batch_size 256 \
+    --forecast_horizon 5 \
+    --select_ticker RELIANCE
+
+# Switch to view any other company stock forecast instantly without retraining
+python multi_company_unified_lstm.py --select_ticker TCS --view_only
+python multi_company_unified_lstm.py --select_ticker INFY --view_only
+```
+
+---
+
+## ☁️ Google Colab Quickstart
+
+Open `Universal_Multi_Company_Stock_LSTM.ipynb` in Google Colab (with T4 GPU runtime enabled):
+
+```bash
+# 1. Clone repository
+!git clone https://github.com/Raghava-sensai/stock-lstm-prediction.git
+%cd stock-lstm-prediction
+
+# 2. Install dependencies
+!pip install -q torch pandas numpy matplotlib scikit-learn yfinance ipywidgets
+
+# 3. Train ONE universal model on all 55 companies (GPU)
+!python multi_company_unified_lstm.py --data_dir "dataset/archive/NifSent/NIFTY 50" --epochs 20 --batch_size 256
+
+# 4. View interactive dropdown selector
+import pickle
+from multi_company_unified_lstm import launch_interactive_widget
+with open("outputs/universal_multi_company/eval_results.pkl", "rb") as f:
+    eval_results = pickle.load(f)
+launch_interactive_widget(eval_results)
+```
+
 ---
 
 ## 📊 Benchmark Visualizations

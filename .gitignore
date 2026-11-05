@@ -16,5 +16,9 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
+# Outputs & Model Checkpoints
+outputs/
+*.pt
+
 # Logs
 *.log
