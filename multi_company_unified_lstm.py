@@ -86,13 +86,15 @@ def prepare_multi_company_dataset(
     Ingests all company CSV files in a folder, scales each company independently to prevent
     leakage/cross-price distortion, and aggregates sequences into ONE master training dataset.
     """
-    csv_files = glob.glob(os.path.join(folder_path, "*.csv"))
-    if not csv_files:
-        # Search recursively if nested
-        csv_files = glob.glob(os.path.join(folder_path, "**", "*.csv"), recursive=True)
+    if os.path.isfile(folder_path) and folder_path.lower().endswith(".csv"):
+        csv_files = [folder_path]
+    else:
+        found_files = set(glob.glob(os.path.join(folder_path, "*.csv")))
+        found_files.update(glob.glob(os.path.join(folder_path, "**", "*.csv"), recursive=True))
+        csv_files = sorted(list(found_files))
 
     if not csv_files:
-        raise FileNotFoundError(f"No CSV files found in folder: '{folder_path}'")
+        raise FileNotFoundError(f"No CSV files found in target: '{folder_path}'")
 
     if max_companies:
         csv_files = csv_files[:max_companies]
