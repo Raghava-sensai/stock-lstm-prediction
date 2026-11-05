@@ -1,28 +1,35 @@
 """
-Universal Multi-Company Stock LSTM Model.
-Trains ONE unified, generalized LSTM model across an entire folder of company CSV files.
+Universal Multi-Company Stock LSTM Model with Reversible Window-Relative Normalization.
+Trains ONE unified, generalized PyTorch LSTM model across an entire folder of company CSV files.
+Uses Window-Relative Scaling (Instance Normalization) to prevent historical price explosion,
+scale distortion, and non-stationarity over decades.
 Allows selecting or clicking any company stock to view its specific multi-step forecast and graphs.
 """
 
 import os
 import glob
 import argparse
+import pickle
 from typing import Dict, List, Tuple, Any, Optional
 import numpy as np
 import pandas as pd
+from numpy.lib.stride_tricks import sliding_window_view
 import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
-from sklearn.preprocessing import MinMaxScaler
+from torch.utils.data import DataLoader, TensorDataset
 
 from lstm_model import StockLSTM
-from data_pipeline import add_technical_indicators, create_sliding_sequences
-from train_and_compare import format_price
+from data_pipeline import add_technical_indicators
+
+
+PRICE_COLS = ["Open", "High", "Low", "Close", "SMA_10", "SMA_20", "EMA_12"]
+OSC_COLS = ["RSI_norm", "MACD_norm", "BB_norm", "Vol_norm", "Volm_norm"]
+ALL_FEATURE_COLS = PRICE_COLS + OSC_COLS
 
 
 # =====================================================================
-# 1. BATCH DATASET LOADER FOR MULTIPLE COMPANIES
+# 1. BATCH DATASET LOADER WITH WINDOW-RELATIVE NORMALIZATION
 # =====================================================================
 
 def standardize_company_df(df: pd.DataFrame) -> pd.DataFrame:
@@ -75,7 +82,6 @@ def standardize_company_df(df: pd.DataFrame) -> pd.DataFrame:
 
 def prepare_multi_company_dataset(
     folder_path: str,
-    feature_cols: List[str],
     seq_length: int = 24,
     forecast_horizon: int = 5,
     train_ratio: float = 0.70,
@@ -83,8 +89,9 @@ def prepare_multi_company_dataset(
     max_companies: Optional[int] = None,
 ) -> Dict[str, Any]:
     """
-    Ingests all company CSV files in a folder, scales each company independently to prevent
-    leakage/cross-price distortion, and aggregates sequences into ONE master training dataset.
+    Ingests all company CSV files in a folder, applies Window-Relative Normalization
+    (Reversible Instance Normalization) to make data stationary across decades,
+    and aggregates sequences into ONE master training dataset.
     """
     if os.path.isfile(folder_path) and folder_path.lower().endswith(".csv"):
         csv_files = [folder_path]
@@ -101,9 +108,9 @@ def prepare_multi_company_dataset(
 
     print(f"[*] Found {len(csv_files)} company CSV files to ingest into ONE universal model.")
 
-    target_idx = feature_cols.index("Close")
+    close_idx = PRICE_COLS.index("Close")
     company_registry = {}
-    
+
     all_X_train, all_y_train = [], []
     all_X_val, all_y_val = [], []
     all_X_test, all_y_test = [], []
@@ -113,29 +120,43 @@ def prepare_multi_company_dataset(
         try:
             raw_df = pd.read_csv(file_path)
             clean_df = standardize_company_df(raw_df)
-            if len(clean_df) < (seq_length + forecast_horizon + 50):
-                continue  # Skip files with too few records for rolling indicators
-
-            enriched_df = add_technical_indicators(clean_df)
-            raw_matrix = enriched_df[feature_cols].values
-            n = len(raw_matrix)
-            train_end = int(n * train_ratio)
-
-            # Fit scaler ONLY on company's own training slice
-            f_scaler = MinMaxScaler(feature_range=(0, 1))
-            f_scaler.fit(raw_matrix[:train_end])
-            scaled_matrix = f_scaler.transform(raw_matrix)
-
-            t_scaler = MinMaxScaler(feature_range=(0, 1))
-            t_scaler.min_ = np.array([f_scaler.min_[target_idx]])
-            t_scaler.scale_ = np.array([f_scaler.scale_[target_idx]])
-
-            # Build sliding sequences
-            X_comp, y_comp = create_sliding_sequences(scaled_matrix, target_idx, seq_length, forecast_horizon)
-            n_seq = len(X_comp)
-            if n_seq < 10:
+            if len(clean_df) < (seq_length + forecast_horizon + 60):
                 continue
 
+            enriched_df = add_technical_indicators(clean_df)
+            
+            # Stationary Normalized Oscillators
+            enriched_df["RSI_norm"] = (enriched_df["RSI_14"] - 50.0) / 50.0
+            enriched_df["MACD_norm"] = (enriched_df["MACD"] / (enriched_df["Close"] + 1e-8)).clip(-0.5, 0.5)
+            enriched_df["BB_norm"] = (enriched_df["BB_Width"] / 100.0).clip(0.0, 2.0)
+            enriched_df["Vol_norm"] = (enriched_df["Volatility_20"] / 100.0).clip(0.0, 2.0)
+            v_roll = enriched_df["Volume"].rolling(20, min_periods=1).mean() + 1.0
+            enriched_df["Volm_norm"] = ((enriched_df["Volume"] - v_roll) / v_roll).clip(-2.0, 5.0)
+            enriched_df = enriched_df.ffill().bfill()
+
+            P_mat = enriched_df[PRICE_COLS].values
+            O_mat = enriched_df[OSC_COLS].values
+            Close_vec = enriched_df["Close"].values
+
+            n_seq = len(enriched_df) - seq_length - forecast_horizon + 1
+            if n_seq < 20:
+                continue
+
+            # Vectorized sliding window extraction
+            P_wins = sliding_window_view(P_mat[:n_seq + seq_length - 1], window_shape=(seq_length, len(PRICE_COLS)))[:, 0, :, :]
+            bases = P_wins[:, -1, close_idx].reshape(-1, 1, 1) # Shape: (n_seq, 1, 1)
+
+            # Reversible Instance Normalization: scale price features relative to current window Close
+            P_wins_norm = (P_wins - bases) / (bases + 1e-8)
+            O_wins = sliding_window_view(O_mat[:n_seq + seq_length - 1], window_shape=(seq_length, len(OSC_COLS)))[:, 0, :, :]
+
+            X_comp = np.concatenate([P_wins_norm, O_wins], axis=2).astype(np.float32)
+
+            # Target: Multi-step relative percentage return ahead
+            future_close = sliding_window_view(Close_vec[seq_length:], window_shape=forecast_horizon)[:n_seq]
+            y_comp = ((future_close - bases[:, 0, :]) / (bases[:, 0, :] + 1e-8)).astype(np.float32)
+
+            # Train / Val / Test Splits
             n_tr = int(n_seq * train_ratio)
             n_va = max(1, int(n_seq * val_ratio))
             n_te = n_seq - (n_tr + n_va)
@@ -143,6 +164,9 @@ def prepare_multi_company_dataset(
             X_tr, y_tr = X_comp[:n_tr], y_comp[:n_tr]
             X_va, y_va = X_comp[n_tr : n_tr + n_va], y_comp[n_tr : n_tr + n_va]
             X_te, y_te = X_comp[n_tr + n_va :], y_comp[n_tr + n_va :]
+
+            bases_te = bases[n_tr + n_va :, 0, 0]
+            actuals_te = future_close[n_tr + n_va :]
 
             all_X_train.append(X_tr)
             all_y_train.append(y_tr)
@@ -156,12 +180,12 @@ def prepare_multi_company_dataset(
 
             # Save company metadata for individual inference
             company_registry[ticker] = {
-                "feature_scaler": f_scaler,
-                "target_scaler": t_scaler,
-                "last_raw_df": clean_df.tail(seq_length + 60),
                 "X_test": X_te,
                 "y_test": y_te,
+                "bases_test": bases_te,
+                "actuals_test": actuals_te,
                 "test_dates": test_dates,
+                "last_raw_df": clean_df.tail(seq_length + 60),
                 "last_price": float(clean_df["Close"].iloc[-1]),
                 "total_records": len(clean_df),
             }
@@ -170,18 +194,18 @@ def prepare_multi_company_dataset(
         except Exception as e:
             print(f"  [!] Skipped {ticker}: {e}")
 
-    # Pool all company data into single tensors
+    # Pool all company data into master tensors
     X_train_pooled = np.concatenate(all_X_train, axis=0)
     y_train_pooled = np.concatenate(all_y_train, axis=0)
     X_val_pooled = np.concatenate(all_X_val, axis=0)
     y_val_pooled = np.concatenate(all_y_val, axis=0)
 
     print("\n" + "=" * 65)
-    print(f"[POOLED DATASET SUMMARY]")
+    print(f"[POOLED DATASET SUMMARY (WINDOW-RELATIVE STATIONARY)]")
     print(f"  Companies Successfully Processed: {len(company_registry)}")
     print(f"  Total Master Training Sequences:  {len(X_train_pooled):,}")
     print(f"  Total Master Validation Sequences:{len(X_val_pooled):,}")
-    print(f"  Feature Dimensions:               {len(feature_cols)} features")
+    print(f"  Feature Dimensions:               {len(ALL_FEATURE_COLS)} features")
     print(f"  Lookback Window:                  {seq_length} timesteps")
     print(f"  Forecast Horizon:                 {forecast_horizon} candles ahead")
     print("=" * 65)
@@ -192,7 +216,7 @@ def prepare_multi_company_dataset(
         "X_val": X_val_pooled,
         "y_val": y_val_pooled,
         "company_registry": company_registry,
-        "feature_cols": feature_cols,
+        "feature_cols": ALL_FEATURE_COLS,
         "seq_length": seq_length,
         "forecast_horizon": forecast_horizon,
     }
@@ -207,7 +231,7 @@ def train_universal_model(
     hidden_size: int = 96,
     num_layers: int = 2,
     epochs: int = 20,
-    batch_size: int = 128,
+    batch_size: int = 256,
     lr: float = 0.001,
     weight_decay: float = 1e-4,
     device: str = "cpu",
@@ -228,12 +252,12 @@ def train_universal_model(
     val_tensor_y = torch.tensor(pooled_data["y_val"], dtype=torch.float32)
 
     train_loader = DataLoader(
-        torch.utils.data.TensorDataset(train_tensor_x, train_tensor_y),
+        TensorDataset(train_tensor_x, train_tensor_y),
         batch_size=batch_size,
         shuffle=True,
     )
     val_loader = DataLoader(
-        torch.utils.data.TensorDataset(val_tensor_x, val_tensor_y),
+        TensorDataset(val_tensor_x, val_tensor_y),
         batch_size=batch_size,
         shuffle=False,
     )
@@ -249,7 +273,6 @@ def train_universal_model(
     model.to(device)
 
     criterion = nn.MSELoss()
-    # Decoupled AdamW optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", factor=0.5, patience=3)
 
@@ -308,7 +331,7 @@ def train_universal_model(
     }, model_path)
 
     # Evaluate each company individually using this single universal model
-    company_evaluations = evaluate_all_companies(model, registry, feature_cols, seq_length, forecast_horizon, device, output_dir)
+    company_evaluations = evaluate_all_companies(model, registry, seq_length, forecast_horizon, device, output_dir)
 
     print("\n" + "=" * 65)
     print(f"[OK] Universal Model Training Complete!")
@@ -326,20 +349,19 @@ def train_universal_model(
 
 
 # =====================================================================
-# 3. INDIVIDUAL COMPANY EVALUATION WITH THE SINGLE MODEL
+# 3. INDIVIDUAL COMPANY EVALUATION (TEST RECONSTRUCTION)
 # =====================================================================
 
 def evaluate_all_companies(
     model: nn.Module,
     registry: Dict[str, Any],
-    feature_cols: List[str],
     seq_length: int,
     forecast_horizon: int,
     device: str,
     output_dir: str,
 ) -> Dict[str, Any]:
     """
-    Runs the single universal model on each company's specific test set and collects metrics.
+    Runs the universal model on each company's specific test set and reconstructs actual price paths.
     """
     model.eval()
     eval_results = {}
@@ -347,18 +369,19 @@ def evaluate_all_companies(
 
     for ticker, comp in registry.items():
         X_test = comp["X_test"]
-        y_test = comp["y_test"]
-        t_scaler = comp["target_scaler"]
+        bases_test = comp["bases_test"]
+        actuals_test = comp["actuals_test"]
 
         if len(X_test) == 0:
             continue
 
         with torch.no_grad():
             X_tensor = torch.tensor(X_test, dtype=torch.float32).to(device)
-            scaled_preds = model(X_tensor).cpu().numpy()
+            pred_rel = model(X_tensor).cpu().numpy()
 
-        actuals = t_scaler.inverse_transform(y_test.reshape(-1, 1)).reshape(-1, forecast_horizon)
-        predictions = t_scaler.inverse_transform(scaled_preds.reshape(-1, 1)).reshape(-1, forecast_horizon)
+        # Reconstruct predicted prices in rupees/dollars from relative returns
+        predictions = bases_test[:, None] * (1.0 + pred_rel)
+        actuals = actuals_test
 
         rmse = float(np.sqrt(np.mean((actuals - predictions) ** 2)))
         mae = float(np.mean(np.abs(actuals - predictions)))
@@ -372,15 +395,24 @@ def evaluate_all_companies(
         # Real-time latest candle forecast from this company's most recent sequence
         last_raw = comp["last_raw_df"]
         enriched = add_technical_indicators(last_raw)
-        recent_feats = enriched[feature_cols].iloc[-seq_length:].values
-        scaled_recent = comp["feature_scaler"].transform(recent_feats)
-        in_t = torch.tensor(scaled_recent, dtype=torch.float32).unsqueeze(0).to(device)
+        enriched["RSI_norm"] = (enriched["RSI_14"] - 50.0) / 50.0
+        enriched["MACD_norm"] = (enriched["MACD"] / (enriched["Close"] + 1e-8)).clip(-0.5, 0.5)
+        enriched["BB_norm"] = (enriched["BB_Width"] / 100.0).clip(0.0, 2.0)
+        enriched["Vol_norm"] = (enriched["Volatility_20"] / 100.0).clip(0.0, 2.0)
+        v_roll = enriched["Volume"].rolling(20, min_periods=1).mean() + 1.0
+        enriched["Volm_norm"] = ((enriched["Volume"] - v_roll) / v_roll).clip(-2.0, 5.0)
+        enriched = enriched.ffill().bfill()
 
-        with torch.no_grad():
-            latest_pred_scaled = model(in_t).cpu().numpy()
-
-        live_preds = t_scaler.inverse_transform(latest_pred_scaled.reshape(-1, 1)).flatten().tolist()
         curr_price = float(last_raw["Close"].iloc[-1])
+        recent_P = (enriched[PRICE_COLS].iloc[-seq_length:].values - curr_price) / (curr_price + 1e-8)
+        recent_O = enriched[OSC_COLS].iloc[-seq_length:].values
+        recent_X = np.concatenate([recent_P, recent_O], axis=1)
+
+        in_t = torch.tensor(recent_X, dtype=torch.float32).unsqueeze(0).to(device)
+        with torch.no_grad():
+            latest_pred_rel = model(in_t).cpu().numpy().flatten()
+
+        live_preds = (curr_price * (1.0 + latest_pred_rel)).tolist()
         terminal_pred = live_preds[-1]
         delta = terminal_pred - curr_price
         pct_chg = (delta / curr_price) * 100
@@ -422,7 +454,6 @@ def evaluate_all_companies(
     print(f"[+] Saved multi-company summary table to: {summary_path}")
 
     # Save evaluation cache for instant interactive selection
-    import pickle
     cache_path = os.path.join(output_dir, "eval_results.pkl")
     try:
         with open(cache_path, "wb") as f:
@@ -459,10 +490,10 @@ def view_company_forecast(
     print("\n" + "=" * 65)
     print(f"       UNIVERSAL LSTM FORECAST FOR: {ticker}")
     print("=" * 65)
-    print(f"  Current Stock Price:     ${res['current_price']:.2f}")
-    print(f"  Predicted Net Target:    ${res['terminal_price']:.2f} ({res['delta']:+.2f} | {res['pct_change']:+.2f}%)")
+    print(f"  Current Stock Price:     {res['current_price']:.2f}")
+    print(f"  Predicted Net Target:    {res['terminal_price']:.2f} ({res['delta']:+.2f} | {res['pct_change']:+.2f}%)")
     print(f"  Directional Signal:      {res['signal']}")
-    print(f"  Model Test RMSE:         ${res['rmse']:.2f}")
+    print(f"  Model Test RMSE:         {res['rmse']:.2f}")
     print(f"  Model Test MAPE:         {res['mape']:.2f}%")
     print(f"  Directional Accuracy:    {res['directional_accuracy']:.1f}%")
     print("-" * 65)
@@ -471,7 +502,7 @@ def view_company_forecast(
         d = p - res["current_price"]
         pct = (d / res["current_price"]) * 100
         sig = "UP" if d > 0 else "DOWN"
-        print(f"    t+{step_idx:<2} -> ${p:<8.2f} (Delta: {d:>+7.2f} | {pct:>+5.2f}%) [{sig}]")
+        print(f"    t+{step_idx:<2} -> {p:<8.2f} (Delta: {d:>+7.2f} | {pct:>+5.2f}%) [{sig}]")
     print("=" * 65)
 
     # Plot Visual
@@ -481,8 +512,9 @@ def view_company_forecast(
     act_step1 = res["actuals"][:, 0]
     pred_step1 = res["predictions"][:, 0]
     test_dates = res["test_dates"][:len(act_step1)]
+
     axes[0].plot(test_dates, act_step1, label="Actual Price", color="black", linewidth=2)
-    axes[0].plot(test_dates, pred_step1, label=f"Universal LSTM (RMSE: ${res['rmse']:.2f})", color="#1f77b4", linestyle="--", linewidth=1.8)
+    axes[0].plot(test_dates, pred_step1, label=f"Universal LSTM (RMSE: {res['rmse']:.2f}, MAPE: {res['mape']:.2f}%)", color="#1f77b4", linestyle="--", linewidth=1.8)
     axes[0].set_title(f"{ticker}: Model Prediction vs Ground Truth", fontweight="bold")
     axes[0].set_xlabel("Date")
     axes[0].set_ylabel("Price")
@@ -556,7 +588,7 @@ def main():
     parser = argparse.ArgumentParser(description="Universal Multi-Company Stock LSTM Pipeline")
     parser.add_argument("--data_dir", type=str, default="./dataset/archive/NifSent/NIFTY 50", help="Folder containing company CSV files")
     parser.add_argument("--epochs", type=int, default=15, help="Training epochs")
-    parser.add_argument("--batch_size", type=int, default=128, help="Batch size for master pooled data")
+    parser.add_argument("--batch_size", type=int, default=256, help="Batch size for master pooled data")
     parser.add_argument("--forecast_horizon", type=int, default=5, help="Number of candles ahead to forecast")
     parser.add_argument("--seq_length", type=int, default=24, help="Sequence lookback window")
     parser.add_argument("--max_companies", type=int, default=None, help="Optional limit on number of companies to ingest")
@@ -565,7 +597,6 @@ def main():
     parser.add_argument("--view_only", action="store_true", help="Skip training and view forecast from cached evaluation")
     args = parser.parse_args()
 
-    import pickle
     if args.view_only:
         cache_path = os.path.join(args.output_dir, "eval_results.pkl")
         if not os.path.exists(cache_path):
@@ -579,15 +610,9 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"[*] Initializing Universal Multi-Company LSTM on device: {device.upper()}")
 
-    features = [
-        "Open", "High", "Low", "Close", "Volume",
-        "SMA_10", "SMA_20", "EMA_12", "RSI_14", "MACD", "BB_Width", "Volatility_20",
-    ]
-
     # 1. Ingest all company CSVs and pool into unified dataset
     pooled_data = prepare_multi_company_dataset(
         folder_path=args.data_dir,
-        feature_cols=features,
         seq_length=args.seq_length,
         forecast_horizon=args.forecast_horizon,
         max_companies=args.max_companies,
